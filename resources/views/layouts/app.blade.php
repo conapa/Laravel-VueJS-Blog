@@ -16,15 +16,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <!--scripts -->
 
      <!-- Bootstrap core CSS -->
-  <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{secure_asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{secure_asset('assets/css/font-awesome.min.css')}}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="{{asset('assets/css/added_style.css')}}" rel="stylesheet">
+  <link href="{{secure_asset('assets/css/added_style.css')}}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -33,9 +33,9 @@
        @yield('content')
        @include('layouts.footer')
     </div>
-    <script src="{{asset('assets/js/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('js/app.js')}}" defer ></script>
+    <script src="{{secure_asset('assets/js/jquery.min.js')}}"></script>
+    <script src="{{secure_asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{secure_asset('js/app.js')}}" defer ></script>
     <script>
         $(document).ready(function(){
           $('.switch-tologin-modal').on('click',function(){
