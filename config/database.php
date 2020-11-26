@@ -1,12 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-$url = parse_url(getenv("DATABASE_URL"));
 
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
 return [
 
     /*
@@ -71,10 +66,10 @@ return [
 
         'pgsql' => array(
         'driver'   => 'pgsql',
-        'host'     => $host,
-        'database' => $database,
-        'username' => $username,
-        'password' => $password,
+        'host'     => 'ec2-52-87-135-240.compute-1.amazonaws.com',
+        'database' => 'db35v2kt506fi2',
+        'username' => 'yhzvdqgyaqhbsn',
+        'password' => '2952fe9bd179847b39a44fbd12db250851f5ede468fd3f146c66ceb65caec94f',
         'charset'  => 'utf8',
         'prefix'   => '',
         'schema'   => 'public',
